@@ -1,8 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
 // import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
-import paymentOptionSlice from "./slice/payment-option-slice";
-import cartSlice from "./slice/cart-slice";
+import paymentOptionSlice from "./slice/payment-option-slice"; 
 import userInputSlice from "./slice/input-slice";
 import themeSlice from "./slice/theme-slice";
 import {
@@ -21,7 +20,7 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 
 const rootReducer = combineReducers({
   userInput: userInputSlice,
-  cart: cartSlice,
+ 
   paymentOption: paymentOptionSlice,
   filteredData: filteredDataSlice,
   themeSlice: themeSlice,
